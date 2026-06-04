@@ -53,6 +53,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 </style>
 </head>
 <body>
+<body>
+<script>
+  const password = "Ic3dcoff33!";
+  const input = prompt("Enter password to view this portfolio:");
+  if (input !== password) {
+    document.body.innerHTML = "<h2 style='font-family:sans-serif;text-align:center;margin-top:20vh'>Access denied.</h2>";
+  }
+</script>  
 <div class="cursor" id="cursor"><div class="cursor-dot"></div><span class="cursor-label" id="cursor-label"></span></div>
 <nav>
   <div class="nav-left">
